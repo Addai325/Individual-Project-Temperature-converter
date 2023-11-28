@@ -1,0 +1,52 @@
+<!-- Name: Ransford Addai
+     Training ID: 32524     
+     Web Development Individual Project 
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Ransford's Temperature Converter</title>
+</head>
+<body>
+  <!-- Container for centering the content vertically -->
+  <div class="container">
+    <!-- Temperature Converter Section -->
+    <div class="converter">
+      <!-- Title -->
+      <h1>Temperature Converter</h1>
+      <!-- Input for temperature -->
+      <div class="input-group">
+        <label for="inputTemp">Temperature:</label>
+        <input type="number" id="inputTemp" placeholder="Enter temperature" step="0.01">
+      </div>
+      <!-- Dropdown for selecting the unit from -->
+      <div class="input-group">
+        <label for="unitFrom">From:</label>
+        <select id="unitFrom">
+          <option value="Celsius">Celsius</option>
+          <option value="Fahrenheit">Fahrenheit</option>
+        </select>
+      </div>
+      <!-- Dropdown for selecting the unit to -->
+      <div class="input-group">
+        <label for="unitTo">To:</label>
+        <select id="unitTo">
+          <option value="Celsius">Celsius</option>
+          <option value="Fahrenheit">Fahrenheit</option>
+        </select>
+      </div>
+      <!-- Button to trigger temperature conversion -->
+      <button onclick="convertTemperature()">Convert</button>
+      <!-- Result display area -->
+      <div class="result" id="result"></div>
+    </div>
+  </div>
+  <!-- Including JavaScript file for functionality -->
+  <script src="script.js"></script>
+</body>
+</html>
